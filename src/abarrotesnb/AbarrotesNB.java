@@ -38,9 +38,8 @@ public class AbarrotesNB {
         System.out.println("Hora formateada:\t" + horaSDF.format(horaIngre));//Se imprime hora formateada
         System.out.println("Fecha formateada:\t" + fechaSDF.format(fechaIngre));//Se imprime fecha formateada
 
-        for (int i = 0; i < pr.imprimFecha().length; i++) {
-
-            System.out.println(pr.imprimFecha()[i]);
+        for (int i = 0; i < pr.fecha().length; i++) {
+            System.out.println(pr.fecha()[i]+" : "+pr.hora()[i]);            
         }
 
     }
