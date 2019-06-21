@@ -13,10 +13,9 @@ public class fecha {
 
     public fecha() throws ParseException {
         SimpleDateFormat formFecha = new SimpleDateFormat("dd/MM/yyyy");//Se instancia el formato para Fecha
-        Date fechaIngre, horaIngre = null;//Se crean variables para fecha y hora
+        Date fechaIngre = null;//Se crea variable para fecha
         String fecha = this.fecha();
-
-        fechaIngre = formFecha.parse(fecha);//Se convierte(parsea) la fecha y hora a formato "SimpleDateFormat""
+        fechaIngre = formFecha.parse(fecha);//Se convierte(parsea) la fecha a formato "SimpleDateFormat""
         String formatoFecha = "dd-MMM-yyyy";//Se crea el formato en el que se mostrará la fecha
         SimpleDateFormat fechaSDF = new SimpleDateFormat(formatoFecha); //Se instancia asignando el formato en el que quedará la fecha
     }
@@ -70,8 +69,8 @@ public class fecha {
 //    Se crea una variable array y se le asigna el arreglo completo con las fechas
     String[] arrayFecha = fechaCom();
 
-//    Imprimir Fechas quemadas
-    public void imprimir() throws ParseException {
+//    Imprimir Fechas previamente almacenadas
+    public void imprimirFecha() throws ParseException {
         System.out.println(asList(arrayFecha));
     }
 }

@@ -10,6 +10,7 @@ public class AbarrotesNB {
 //        ProdAba pr = new ProdAba();
         codigo cod = new codigo();
         fecha fe = new fecha();
+        hora ho = new hora();
 
 //        fechaHora fh = new fechaHora();
         int a = cod.codigo.length;
@@ -17,9 +18,12 @@ public class AbarrotesNB {
         System.out.println("Indice: " + cod.codigo[1]);
         System.out.println("Fechas completas");
 
-        fe.imprimir();
+        fe.imprimirFecha();
         System.out.println("-------");
         System.out.println(fe.arrayFecha[2]);
+        System.out.println("-------");
+        ho.imprimirHora();
+        
 
     }
 
