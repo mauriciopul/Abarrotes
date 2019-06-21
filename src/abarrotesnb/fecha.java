@@ -2,7 +2,6 @@ package abarrotesnb;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import static java.util.Arrays.asList;
 import java.util.Date;
 import java.util.Random;
@@ -60,39 +59,19 @@ public class fecha {
         return a;
     }
 
-//<editor-fold>
-//    
 //    Agregar las fechas a un arreglo
     public String[] fechaCom() throws ParseException {
         String[] arrayFec = new String[tam];
         for (int i = 0; i < tam; i++) {
             arrayFec[i] = this.fecha();
         }
-        return arrayFec; 
+        return arrayFec;
     }
 //    Se crea una variable array y se le asigna el arreglo completo con las fechas
-   String[] arrayFecha = fechaCom();   
-    
+    String[] arrayFecha = fechaCom();
 
 //    Imprimir Fechas quemadas
     public void imprimir() throws ParseException {
         System.out.println(asList(arrayFecha));
     }
-//  Copiar temporalmente el arreglo creado para operarlo sin que se cambien los datos    
-
-//      public void imprimir() throws ParseException {
-//            String temp="";
-//        for (int i = 0; i < this.fecha().length(); i++) {
-//            String temp2="";
-//            temp2 = this.fechaCom()[i];
-//            System.out.println(temp2);
-//            if(i==2){
-//                temp=temp2;
-//            }
-//        }
-//          System.out.println("-----");
-//          System.out.println(temp);
-//    }
-//    
-//</editor-fold>
 }
