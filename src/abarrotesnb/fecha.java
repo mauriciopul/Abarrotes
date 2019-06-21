@@ -72,5 +72,7 @@ public class fecha {
 //    Imprimir Fechas previamente almacenadas
     public void imprimirFecha() throws ParseException {
         System.out.println(asList(arrayFecha));
+        System.out.println("__________________________________________________________________________________");
+        System.out.println("");
     }
 }

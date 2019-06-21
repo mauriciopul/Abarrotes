@@ -60,6 +60,8 @@ public class hora {
     
     public void imprimirHora(){
         System.out.println(Arrays.asList(arrayHora));
+        System.out.println("__________________________________________________________________________________");
+        System.out.println("");
     }
 
 }
